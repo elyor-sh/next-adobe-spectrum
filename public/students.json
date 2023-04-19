@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Ilya",
+    "progress": 45,
+    "module": "English grammar",
+    "lesson": "The verb 'to be'",
+    "course": {
+      "id": 1,
+      "name": "Ielts for beginners"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Vlad",
+    "progress": 25,
+    "module": "Syntax of Java",
+    "lesson": "Methods",
+    "course": {
+      "id": 2,
+      "name": "Java Bootcamp courses"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Abraham",
+    "progress": 56,
+    "module": "Javascript",
+    "lesson": "Working with DOM elements",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Neila",
+    "progress": 91,
+    "module": "English grammar",
+    "lesson": "Gerunds AND Infinitives",
+    "course": {
+      "id": 1,
+      "name": "Ielts for beginners"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Usman",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Jennifer",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Nikita",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Artyom",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Lucas",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Ahmad",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 11,
+    "name": "John",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Cedric",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Valeriy",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Yuliya",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Imran",
+    "progress": 19,
+    "module": "CSS",
+    "lesson": "Selectors",
+    "course": {
+      "id": 1,
+      "name": "Web development"
+    }
+  }
+]
