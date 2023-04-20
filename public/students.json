@@ -67,101 +67,101 @@
   },
   {
     "id": 7,
-    "name": "Nikita",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "Jane",
+    "progress": 60,
+    "module": "History",
+    "lesson": "World War II",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 3,
+      "name": "Modern History"
     }
   },
   {
     "id": 8,
-    "name": "Artyom",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "David",
+    "progress": 75,
+    "module": "Physics",
+    "lesson": "Newton's Laws of Motion",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 4,
+      "name": "Classical Mechanics"
     }
   },
   {
     "id": 9,
-    "name": "Lucas",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "Emma",
+    "progress": 95,
+    "module": "Biology",
+    "lesson": "Cell Structure and Function",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 5,
+      "name": "Introductory Biology"
     }
   },
   {
     "id": 10,
-    "name": "Ahmad",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "James",
+    "progress": 65,
+    "module": "Chemistry",
+    "lesson": "Atomic Structure",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 6,
+      "name": "General Chemistry"
     }
   },
   {
     "id": 11,
-    "name": "John",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "Yulia",
+    "progress": 85,
+    "module": "Computer Science",
+    "lesson": "Object-Oriented Programming",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 7,
+      "name": "Programming Fundamentals"
     }
   },
   {
     "id": 12,
-    "name": "Cedric",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "Lucas",
+    "progress": 70,
+    "module": "Environmental Science",
+    "lesson": "Climate Change",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 8,
+      "name": "Environmental Studies"
     }
   },
   {
     "id": 13,
-    "name": "Valeriy",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "Ava",
+    "progress": 50,
+    "module": "Art",
+    "lesson": "Drawing Techniques",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 9,
+      "name": "Fine Arts"
     }
   },
   {
     "id": 14,
-    "name": "Yuliya",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "William",
+    "progress": 90,
+    "module": "Literature",
+    "lesson": "Shakespearean Plays",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 10,
+      "name": "English Literature"
     }
   },
   {
     "id": 15,
-    "name": "Imran",
-    "progress": 19,
-    "module": "CSS",
-    "lesson": "Selectors",
+    "name": "Sophia",
+    "progress": 80,
+    "module": "Music",
+    "lesson": "Jazz Theory",
     "course": {
-      "id": 1,
-      "name": "Web development"
+      "id": 11,
+      "name": "Music Theory"
     }
   }
 ]

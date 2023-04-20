@@ -1,15 +1,14 @@
-import { useAppSelector, wrapper } from '@/store';
-import { fetchStudentsList } from '@/entities/students';
+import { wrapper } from '@/store';
+import { fetchStudentsList, StudentsList } from '@/entities/students';
 import { AnyAction } from 'redux';
+import { Container } from '@/shared/ui';
 
 export default function Home() {
-    const { students } = useAppSelector((state) => state.studentsListModel);
-
-    console.log(students);
-
     return (
         <>
-            <pre>{JSON.stringify(students, null, 2)}</pre>
+            <Container>
+                <StudentsList />
+            </Container>
         </>
     );
 }
