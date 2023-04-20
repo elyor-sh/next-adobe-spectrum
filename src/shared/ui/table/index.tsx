@@ -6,28 +6,32 @@ export const enum TableColumnType {
     ACTION = 'ACTION',
 }
 
-export type TableColumnsType<T> = {
+export type TableColumnsType<T extends object> = {
     uuid: React.Key;
     title: React.ReactNode;
     rowKey: keyof T | null;
     type: TableColumnType;
-    action?: (row: T, column: TableColumnsType<T>) => React.ReactNode;
+    action?: (
+        row: TableDataInterface<T>,
+        column: TableColumnsType<T>
+    ) => React.ReactNode;
     onColumnClick?: (column: TableColumnsType<T>) => void;
 };
 
-export type TableDataInterface<IData> = {
-    id: React.Key;
-    [key: keyof IData]: string | number | null | undefined | boolean;
+export type TableDataInterface<IData extends object> = {
+    [key in keyof IData]: IData[key];
+} & {
+    id: string;
 };
 
-export type TableData<IData> = {
+export type TableData<IData extends object> = {
     data: TableDataInterface<IData>[];
     columns: TableColumnsType<IData>[];
 };
 
-function drawColumn<RowT, ColumnT>(
+function drawColumn<RowT extends object>(
     row: TableDataInterface<RowT>,
-    column: TableColumnsType<ColumnT>
+    column: TableColumnsType<RowT>
 ) {
     switch (column.type) {
         case TableColumnType.STRING: // когда нужно подставить простую строку
@@ -61,10 +65,12 @@ const Table = <IData extends object>({ data, columns }: TableData<IData>) => {
                             <tr key={row.id}>
                                 {columns.map((col) => (
                                     <td key={col.uuid}>
-                                        {drawColumn<typeof row, typeof col>(
-                                            row,
-                                            col
-                                        )}
+                                        {
+                                            drawColumn(
+                                                row,
+                                                col
+                                            ) as unknown as React.ReactNode
+                                        }
                                     </td>
                                 ))}
                             </tr>

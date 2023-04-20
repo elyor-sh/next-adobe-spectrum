@@ -13,7 +13,7 @@ export const fetchStudentsList = createAsyncThunk<
 >('students/fetchList', async (query?: StudentsListSortType) => {
     try {
         const res = await fetch(
-            envConfig.BASE_API_URL + `/students?` + qs.stringify(query)
+            envConfig.BASE_API_URL + `/students?` + qs.stringify(query || {})
         );
         return res.json();
     } catch (e) {
