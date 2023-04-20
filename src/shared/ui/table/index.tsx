@@ -12,6 +12,7 @@ export type TableColumnsType<T> = {
     rowKey: keyof T | null;
     type: TableColumnType;
     action?: (row: T, column: TableColumnsType<T>) => React.ReactNode;
+    onColumnClick?: (column: TableColumnsType<T>) => void;
 };
 
 export type TableDataInterface<IData> = {
@@ -46,7 +47,12 @@ const Table = <IData extends object>({ data, columns }: TableData<IData>) => {
                     <thead>
                         <tr>
                             {columns.map((col) => (
-                                <th key={col.uuid}>{col.title}</th>
+                                <th
+                                    key={col.uuid}
+                                    onClick={() => col.onColumnClick?.(col)}
+                                >
+                                    {col.title}
+                                </th>
                             ))}
                         </tr>
                     </thead>

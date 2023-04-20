@@ -1,13 +1,20 @@
 export interface StudentsListType {
-    id: number;
+    id: string;
     name: string;
     progress: number;
     module: string;
     lesson: string;
-    course: StudentsListTypeCourse;
+    course: string;
 }
 
-export interface StudentsListTypeCourse {
-    id: number;
-    name: string;
+export const enum SortOrderByEnum {
+    asc = 'asc',
+    desc = 'desc',
 }
+
+export type StudentsListSortType = {
+    sortBy: keyof StudentsListType;
+    order: SortOrderByEnum;
+};
+
+export type StudentsUpdateParamsType = Partial<StudentsListType>;

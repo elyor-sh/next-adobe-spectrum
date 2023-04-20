@@ -105,6 +105,10 @@ button:disabled {
   cursor: auto;
 }
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

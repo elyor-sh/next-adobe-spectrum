@@ -1,5 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { fetchStudentsList, StudentsListType } from '@/entities/students';
+import {
+    fetchStudentsList,
+    StudentsListType,
+    updateStudentApi,
+} from '@/entities/students';
 import { HYDRATE } from 'next-redux-wrapper';
 import { AnyAction } from 'redux';
 
@@ -33,6 +37,23 @@ export const studentsListModel = createSlice({
             ) => {
                 // console.log('user list -->', action.payload);
                 state.students = action.payload;
+            }
+        );
+
+        builder.addCase(
+            updateStudentApi.fulfilled,
+            (
+                state: InitialStateType,
+                action: PayloadAction<StudentsListType>
+            ) => {
+                // console.log('user list -->', action.payload);
+                state.students = state.students.map((s) => {
+                    if (s.id === action.payload.id) {
+                        return action.payload;
+                    }
+
+                    return s;
+                });
             }
         );
 

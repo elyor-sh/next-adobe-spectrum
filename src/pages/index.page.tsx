@@ -1,5 +1,9 @@
 import { wrapper } from '@/store';
-import { fetchStudentsList, StudentsList } from '@/entities/students';
+import {
+    fetchStudentsList,
+    SortOrderByEnum,
+    StudentsList,
+} from '@/entities/students';
 import { AnyAction } from 'redux';
 import { Container } from '@/shared/ui';
 
@@ -16,7 +20,12 @@ export default function Home() {
 export const getServerSideProps = wrapper.getServerSideProps(
     ({ dispatch }) =>
         async () => {
-            await dispatch(fetchStudentsList() as AnyAction);
+            await dispatch(
+                fetchStudentsList({
+                    sortBy: 'name',
+                    order: SortOrderByEnum.asc,
+                }) as unknown as AnyAction
+            );
 
             return {
                 props: {},

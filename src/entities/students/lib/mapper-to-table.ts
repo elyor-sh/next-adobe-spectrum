@@ -1,7 +1,7 @@
 import { StudentsListType } from '@/entities/students';
 
 export type StudentsMappedToTableType = {
-    id: number;
+    id: string;
     name: string;
     course: string;
     module: string;
@@ -9,13 +9,14 @@ export type StudentsMappedToTableType = {
     progress: number;
 };
 
+// Сделал маппер ради демонстрации, что если не совпадает структур данных приходящие с сервера и структура данных нужная для фронта
 export const mapperStudentsToTable = (
     list: StudentsListType[]
 ): StudentsMappedToTableType[] => {
     return list.map((l) => ({
         id: l.id,
         name: l.name,
-        course: l.course.name,
+        course: l.course,
         lesson: l.lesson,
         module: l.module,
         progress: l.progress,

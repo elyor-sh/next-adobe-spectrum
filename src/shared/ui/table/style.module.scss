@@ -44,7 +44,12 @@
 
 /* Responsive */
 
-@media (max-width: 767px) {
+@media (max-width: 1240px) {
+
+  .table-wrapper{
+    box-shadow: none;
+  }
+
   .fl-table {
     display: block;
     width: 100%;
@@ -72,13 +77,10 @@
     overflow-x: auto;
   }
   .fl-table td, .fl-table th {
-    padding: 20px .625em .625em .625em;
-    height: 60px;
     vertical-align: middle;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 120px;
     font-size: 16px;
     text-overflow: ellipsis;
   }
@@ -104,6 +106,5 @@
   }
   .fl-table tbody td {
     display: block;
-    text-align: center;
   }
 }
